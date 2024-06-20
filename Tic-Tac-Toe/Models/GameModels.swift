@@ -13,9 +13,9 @@ enum GameType {
     var description: String {
         switch self {
         case .single:
-            return "Share the game and play against a friend."
+            return "Share the game and play against a friend"
         case .bot:
-            return "Play against the PC"
+            return "Play against your device"
         case .peer:
             return "Invite your friend near you who has the app running to play"
         case .undetermined:
