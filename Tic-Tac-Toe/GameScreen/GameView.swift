@@ -21,6 +21,8 @@ struct GameView: View {
                 }
                 .buttonStyle(PlayerButtonStyle(isCurrent: game.player1.isCurrent))
                 
+                Text("vs")
+                
                 Button(game.player2.name) {
                     game.player2.isCurrent = true
                 }
@@ -29,7 +31,7 @@ struct GameView: View {
             .disabled(game.gameStarted)
             ZStack {
                 Rectangle()
-                    .frame(width: 300, height: 300)
+                    .frame(width: 316, height: 316)
                 VStack {
                     HStack {
                         ForEach(0...2, id: \.self) { index in
