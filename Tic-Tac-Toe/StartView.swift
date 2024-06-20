@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StartView: View {
     @EnvironmentObject var game: GameService
+    @StateObject var connectionManager: MPConnectionManager
     @State private var gameType: GameType = .undetermined
     @AppStorage("userName") private var userName = ""
     @State private var opponentName = ""
@@ -18,7 +19,9 @@ struct StartView: View {
     @State private var newName = ""
     init(name: String) {
         self.userName = name
+        _connectionManager = StateObject(wrappedValue: MPConnectionManager(userName: name))
     }
+    
     var body: some View {
         VStack {
             Picker("Select Game", selection: $gameType) {
@@ -39,7 +42,8 @@ struct StartView: View {
                 case .bot:
                     EmptyView()
                 case .peer:
-                    EmptyView()
+                    MPPeersView(startGame: $startGame)
+                        .environmentObject(connectionManager)
                 case .undetermined:
                     EmptyView()
                 }
@@ -61,6 +65,9 @@ struct StartView: View {
                     gameType == .single && opponentName.isEmpty
                 )
                 Image("LaunchScreen")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200)
                 Spacer()
                 Text("Welcome to the game, \(userName)!")
                 Button("Change Name") {
@@ -74,6 +81,7 @@ struct StartView: View {
         .navigationTitle("Tic-Tac-Toe")
         .fullScreenCover(isPresented: $startGame) {
             GameView()
+                .environmentObject(connectionManager)
         }
         .alert("Change Name", isPresented: $changeName, actions: {
             TextField("New Name", text: $newName)

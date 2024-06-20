@@ -21,6 +21,7 @@
 		AF1F97CA2C24A56A0033353A /* UserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97C92C24A56A0033353A /* UserNameView.swift */; };
 		AF1F97CE2C24B1D50033353A /* MPConectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97CD2C24B1D50033353A /* MPConectionManager.swift */; };
 		AF1F97D02C24CA600033353A /* MPGameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97CF2C24CA5F0033353A /* MPGameMove.swift */; };
+		AF1F97D22C24CF080033353A /* MPPeersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97D12C24CF080033353A /* MPPeersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		AF1F97CB2C24B05D0033353A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AF1F97CD2C24B1D50033353A /* MPConectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPConectionManager.swift; sourceTree = "<group>"; };
 		AF1F97CF2C24CA5F0033353A /* MPGameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPGameMove.swift; sourceTree = "<group>"; };
+		AF1F97D12C24CF080033353A /* MPPeersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPPeersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				AF1F97CD2C24B1D50033353A /* MPConectionManager.swift */,
 				AF1F97CF2C24CA5F0033353A /* MPGameMove.swift */,
+				AF1F97D12C24CF080033353A /* MPPeersView.swift */,
 			);
 			path = MultiPeerContectivity;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				AF1F97A92C235A930033353A /* AppEntry.swift in Sources */,
 				AF1F97BA2C23676A0033353A /* GameModels.swift in Sources */,
 				AF1F97C42C23906E0033353A /* GameService.swift in Sources */,
+				AF1F97D22C24CF080033353A /* MPPeersView.swift in Sources */,
 				AF1F97BD2C236D160033353A /* ViewModifiers.swift in Sources */,
 				AF1F97C22C2381670033353A /* GameView.swift in Sources */,
 				AF1F97C62C2394A70033353A /* GameSquare.swift in Sources */,
