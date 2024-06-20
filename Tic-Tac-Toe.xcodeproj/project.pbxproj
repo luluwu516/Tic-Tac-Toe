@@ -18,6 +18,7 @@
 		AF1F97C42C23906E0033353A /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97C32C23906E0033353A /* GameService.swift */; };
 		AF1F97C62C2394A70033353A /* GameSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97C52C2394A70033353A /* GameSquare.swift */; };
 		AF1F97C82C2395A90033353A /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97C72C2395A90033353A /* SquareView.swift */; };
+		AF1F97CA2C24A56A0033353A /* UserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97C92C24A56A0033353A /* UserNameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		AF1F97C32C23906E0033353A /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
 		AF1F97C52C2394A70033353A /* GameSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquare.swift; sourceTree = "<group>"; };
 		AF1F97C72C2395A90033353A /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		AF1F97C92C24A56A0033353A /* UserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				AF1F97B82C2367450033353A /* Models */,
 				AF1F97A82C235A930033353A /* AppEntry.swift */,
+				AF1F97C92C24A56A0033353A /* UserNameView.swift */,
 				AF1F97AA2C235A930033353A /* StartView.swift */,
 				AF1F97BE2C2381120033353A /* GameScreen */,
 				AF1F97BB2C236CEE0033353A /* Utilities */,
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1F97CA2C24A56A0033353A /* UserNameView.swift in Sources */,
 				AF1F97AB2C235A930033353A /* StartView.swift in Sources */,
 				AF1F97A92C235A930033353A /* AppEntry.swift in Sources */,
 				AF1F97BA2C23676A0033353A /* GameModels.swift in Sources */,

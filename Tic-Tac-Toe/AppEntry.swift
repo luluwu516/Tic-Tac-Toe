@@ -9,12 +9,17 @@ import SwiftUI
 
 @main
 struct AppEntry: App {
+    @AppStorage("userName") var userName = ""
     @StateObject var game = GameService()
     
     var body: some Scene {
         WindowGroup {
-            StartView()
+            if userName.isEmpty {
+                UserNameView()
+            } else {
+                StartView(name: userName)
                 .environmentObject(game)
+            }
         }
     }
 }
