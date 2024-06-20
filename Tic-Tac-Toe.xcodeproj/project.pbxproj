@@ -19,6 +19,8 @@
 		AF1F97C62C2394A70033353A /* GameSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97C52C2394A70033353A /* GameSquare.swift */; };
 		AF1F97C82C2395A90033353A /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97C72C2395A90033353A /* SquareView.swift */; };
 		AF1F97CA2C24A56A0033353A /* UserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97C92C24A56A0033353A /* UserNameView.swift */; };
+		AF1F97CE2C24B1D50033353A /* MPConectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97CD2C24B1D50033353A /* MPConectionManager.swift */; };
+		AF1F97D02C24CA600033353A /* MPGameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F97CF2C24CA5F0033353A /* MPGameMove.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,9 @@
 		AF1F97C52C2394A70033353A /* GameSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquare.swift; sourceTree = "<group>"; };
 		AF1F97C72C2395A90033353A /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		AF1F97C92C24A56A0033353A /* UserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameView.swift; sourceTree = "<group>"; };
+		AF1F97CB2C24B05D0033353A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AF1F97CD2C24B1D50033353A /* MPConectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPConectionManager.swift; sourceTree = "<group>"; };
+		AF1F97CF2C24CA5F0033353A /* MPGameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPGameMove.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +72,13 @@
 		AF1F97A72C235A930033353A /* Tic-Tac-Toe */ = {
 			isa = PBXGroup;
 			children = (
-				AF1F97B82C2367450033353A /* Models */,
+				AF1F97CB2C24B05D0033353A /* Info.plist */,
 				AF1F97A82C235A930033353A /* AppEntry.swift */,
 				AF1F97C92C24A56A0033353A /* UserNameView.swift */,
 				AF1F97AA2C235A930033353A /* StartView.swift */,
 				AF1F97BE2C2381120033353A /* GameScreen */,
+				AF1F97CC2C24B12C0033353A /* MultiPeerContectivity */,
+				AF1F97B82C2367450033353A /* Models */,
 				AF1F97BB2C236CEE0033353A /* Utilities */,
 				AF1F97B62C2362E80033353A /* Launch Screen.storyboard */,
 				AF1F97AC2C235A940033353A /* Assets.xcassets */,
@@ -113,6 +120,15 @@
 				AF1F97C52C2394A70033353A /* GameSquare.swift */,
 			);
 			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		AF1F97CC2C24B12C0033353A /* MultiPeerContectivity */ = {
+			isa = PBXGroup;
+			children = (
+				AF1F97CD2C24B1D50033353A /* MPConectionManager.swift */,
+				AF1F97CF2C24CA5F0033353A /* MPGameMove.swift */,
+			);
+			path = MultiPeerContectivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1F97D02C24CA600033353A /* MPGameMove.swift in Sources */,
 				AF1F97CA2C24A56A0033353A /* UserNameView.swift in Sources */,
+				AF1F97CE2C24B1D50033353A /* MPConectionManager.swift in Sources */,
 				AF1F97AB2C235A930033353A /* StartView.swift in Sources */,
 				AF1F97A92C235A930033353A /* AppEntry.swift in Sources */,
 				AF1F97BA2C23676A0033353A /* GameModels.swift in Sources */,
@@ -326,6 +344,8 @@
 				DEVELOPMENT_TEAM = D6Y3GY3BK4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Would like to play Tic-Tac-Toe";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -357,6 +377,8 @@
 				DEVELOPMENT_TEAM = D6Y3GY3BK4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Would like to play Tic-Tac-Toe";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
